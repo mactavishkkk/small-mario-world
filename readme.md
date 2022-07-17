@@ -1,6 +1,6 @@
 # Small Mario world Game !
 
-![alt text](img/readme-img1.png)
+![alt text](img/readme-img.png)
 
 ## OBS!
 
