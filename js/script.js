@@ -1,12 +1,16 @@
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
 
-const jump = () => {
-    mario.classList.add('jump');
+const jump = (event) => {
+    const key = event.key;
+    
+    if (key === 'ArrowUp') {
+        mario.classList.add('jump');
 
     setTimeout(() => {
         mario.classList.remove('jump');
     }, 500)
+    }
 }
 
 const reload = (event) => {
