@@ -1,6 +1,7 @@
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
 
+// Função de pular
 const jump = (event) => {
     const key = event.key;
     
@@ -13,6 +14,7 @@ const jump = (event) => {
     }
 }
 
+// Funcao de restart
 const reload = (event) => {
     const key = event.key;
     
@@ -21,6 +23,7 @@ const reload = (event) => {
     }
 }
 
+// Funcao do ambiente
 const loop = setInterval(() => {
     const pipePosition = pipe.offsetLeft;
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '');
